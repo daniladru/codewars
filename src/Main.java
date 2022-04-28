@@ -32,8 +32,16 @@ public class Main {
 //        System.out.println("Result: " + new Bio().dnaToRna("TTTT"));
 
 //        https://www.codewars.com/kata/57f609022f4d534f05000024/
-        System.out.println("Result: " + new Solution().stray(new int[]{17, 17, 3, 17, 17, 17, 17}));
+//        System.out.println("Result: " + new Solution().stray(new int[]{17, 17, 3, 17, 17, 17, 17}));
 
+//        https://www.codewars.com/kata/5bb904724c47249b10000131/train/java
+//        System.out.println("Result: " + TotalPoints.points(new String[]{"1:1", "2:2", "3:3", "4:4", "2:2", "3:3", "4:4", "3:3", "4:4", "4:4"}));
+
+//        https://www.codewars.com/kata/5b68c7029756802aa2000176/train/java
+//        System.out.println("Result: " + EasyLogs.logs(10, 2, 3));
+
+//        https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/java
+        System.out.println("Result: " + Solution.areaOrPerimeter(4,4));
 
     }
 
