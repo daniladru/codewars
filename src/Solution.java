@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Solution {
     public int solutionMultiplesof3or5(int number) {
@@ -33,4 +33,21 @@ public class Solution {
         return result;
     }
 
+    static int stray(int[] numbers) {
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (Integer element : numbers) {
+            if (map.get(element) == null) {
+                map.put(element, 1);
+            } else map.put(element, map.get(element) + 1);
+        }
+
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1) {
+                return entry.getKey();
+            }
+        }
+
+        return -1;
+
+    }
 }

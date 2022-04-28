@@ -26,8 +26,18 @@ public class Main {
 //        System.out.println("Result: " + new DRoot().digital_root(493193));
 
 //        https://www.codewars.com/kata/5467e4d82edf8bbf40000155/
-        System.out.println("Result: " + new DescendingOrder().sortDesc(123456789 ));
+//        System.out.println("Result: " + new DescendingOrder().sortDesc(123456789 ));
+
+//        https://www.codewars.com/kata/5556282156230d0e5e000089/
+//        System.out.println("Result: " + new Bio().dnaToRna("TTTT"));
+
+//        https://www.codewars.com/kata/57f609022f4d534f05000024/
+        System.out.println("Result: " + new Solution().stray(new int[]{17, 17, 3, 17, 17, 17, 17}));
+
+
     }
+
+
 }
 
 
