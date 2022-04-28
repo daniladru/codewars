@@ -41,7 +41,7 @@ public class Main {
 //        System.out.println("Result: " + EasyLogs.logs(10, 2, 3));
 
 //        https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/java
-        System.out.println("Result: " + Solution.areaOrPerimeter(4,4));
+//        System.out.println("Result: " + Solution.areaOrPerimeter(4,4));
 
     }
 
