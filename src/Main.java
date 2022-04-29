@@ -47,8 +47,16 @@ public class Main {
 //        System.out.println("Result: " + Solution.gridMap(e -> e + 1, new Integer[][] {{1,2,3,4},{5,6,7,8,9},{0,2,4}}));
 
 //        https://www.codewars.com/kata/5ff50f64c0afc50008861bf0/train/java
-        System.out.println("Result: " + Solution.fourSeven(7));
+//        System.out.println("Result: " + Solution.fourSeven(7));
 
+//        https://www.codewars.com/kata/52685f7382004e774f0001f7/train/java
+//        System.out.println("Result: " + HumanReadableTime.makeReadable(86399));
+
+//        https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/java
+//        System.out.println("Result: " + StripComments.stripComments( "apples, pears # and bananas\n     grapes  1  \nbananas !apples", new String[] { "#", "!" }));
+
+//        https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/java
+        System.out.println("Result: " + TimeFormatter.formatDuration(321321));
 
     }
 

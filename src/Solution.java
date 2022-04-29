@@ -78,22 +78,20 @@ public class Solution {
     }
 
 
-    public static String generateName(PhotoManager photoManager) {
-        public static String generateName (PhotoManager photoManager){
-            SecureRandom random = new SecureRandom();
-            String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
-            String name = "";
-            do {
-                name = "";
-                for (int i = 0; i < 6; i++) {
-                    int rndCharAt = random.nextInt(CHAR_LOWER.length());
-                    char rndChar = CHAR_LOWER.charAt(rndCharAt);
-                    name += rndChar;
-                }
-                System.out.println(name);
-            } while (photoManager.nameExists(name) == true);
-
-            return name;
-        }
-    }
+//    public static String generateName(PhotoManager photoManager) {
+//            SecureRandom random = new SecureRandom();
+//            String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
+//            String name = "";
+//            do {
+//                name = "";
+//                for (int i = 0; i < 6; i++) {
+//                    int rndCharAt = random.nextInt(CHAR_LOWER.length());
+//                    char rndChar = CHAR_LOWER.charAt(rndCharAt);
+//                    name += rndChar;
+//                }
+//                System.out.println(name);
+//            } while (photoManager.nameExists(name) == true);
+//
+//            return name;
+//        }
 }
