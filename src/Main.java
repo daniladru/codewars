@@ -43,6 +43,13 @@ public class Main {
 //        https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/java
 //        System.out.println("Result: " + Solution.areaOrPerimeter(4,4));
 
+//        https://www.codewars.com/kata/606b43f4adea6e00425dff42/train/java
+//        System.out.println("Result: " + Solution.gridMap(e -> e + 1, new Integer[][] {{1,2,3,4},{5,6,7,8,9},{0,2,4}}));
+
+//        https://www.codewars.com/kata/5ff50f64c0afc50008861bf0/train/java
+        System.out.println("Result: " + Solution.fourSeven(7));
+
+
     }
 
 

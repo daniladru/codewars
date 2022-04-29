@@ -1,4 +1,7 @@
+import java.nio.charset.Charset;
+import java.util.function.Function;
 import java.util.*;
+
 import java.util.stream.Collectors;
 
 public class Solution {
@@ -53,5 +56,44 @@ public class Solution {
 
     public static int areaOrPerimeter(int l, int w) {
         return (l == w) ? l * w : 2 * (l + w);
+    }
+
+    public static <T, R> R[][] gridMap(Function<T, R> fn, T[][] list) {
+        return (R[][]) Arrays.stream(list).map(e -> Arrays.stream(e).map(fn).toArray(Object[]::new)).toArray(Object[][]::new);
+
+    }
+
+    public static int fourSeven(int n) {
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>() {{
+            put(4, 7);
+            put(7, 4);
+        }};
+        try {
+            return map.get(n);
+        } catch (Throwable t) {
+            return 0;
+        }
+
+
+    }
+
+
+    public static String generateName(PhotoManager photoManager) {
+        public static String generateName (PhotoManager photoManager){
+            SecureRandom random = new SecureRandom();
+            String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
+            String name = "";
+            do {
+                name = "";
+                for (int i = 0; i < 6; i++) {
+                    int rndCharAt = random.nextInt(CHAR_LOWER.length());
+                    char rndChar = CHAR_LOWER.charAt(rndCharAt);
+                    name += rndChar;
+                }
+                System.out.println(name);
+            } while (photoManager.nameExists(name) == true);
+
+            return name;
+        }
     }
 }
