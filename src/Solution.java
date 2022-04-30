@@ -1,3 +1,4 @@
+import javax.swing.tree.TreeCellRenderer;
 import java.nio.charset.Charset;
 import java.util.function.Function;
 import java.util.*;
@@ -94,4 +95,52 @@ public class Solution {
 //
 //            return name;
 //        }
+
+    public static boolean validParentheses(String parens) {
+        System.out.println(parens);
+        int count = 0;
+        boolean result = true;
+
+        for (char symbol : parens.toCharArray()) {
+            if (symbol != '(' && symbol != ')') {
+                continue;
+            }
+            if (symbol == '(') {
+                count++;
+            }
+            if (symbol == ')') {
+                count--;
+            }
+            if (count < 0) {
+                result = false;
+                return result;
+            }
+        }
+
+        if (count!=0) {result = false;}
+        return result;
+    }
+
+//    static TreeNode addToTree(int[] array, int i){
+//        if (i > array.length) {return null;}
+//
+//        TreeNode Result = new TreeNode(array[i]);
+//        Result.left = addToTree(array,i+1);
+//        Result.right  = addToTree(array,i+2);
+//    }
+//    static TreeNode arrayToTree(int[] array) {
+//        if (array.length == 0) {return null;}
+//
+//        TreeNode result  = addToTree(array,0);
+//        result.left  = addToTree(array,1);
+//        result.right  = addToTree(array,2);
+//
+//        result.left.left  = addToTree(array,3);
+//        result.left.right   = addToTree(array,4);
+//
+//        result.right.left  = addToTree(array,5);
+//        result.right.right  = addToTree(array,6);
+//
+//        return result;
+//    }
 }
