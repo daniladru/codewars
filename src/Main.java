@@ -68,8 +68,11 @@ public class Main {
 //        https://www.codewars.com/kata/55c6126177c9441a570000cc/train/java
 //        System.out.println(WeightSort.orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"));
 
+//        https://www.codewars.com/kata/555624b601231dc7a400017a/train/java
+//        System.out.println(JosephusSurvivor.josephusSurvivor(7,3));
 
-
+//        https://www.codewars.com/kata/536a155256eb459b8700077e/train/java
+        System.out.println(TheClockwiseSpiral.createSpiral(3));
 
     }
 }
