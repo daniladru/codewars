@@ -1,4 +1,5 @@
 import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -72,7 +73,23 @@ public class Main {
 //        System.out.println(JosephusSurvivor.josephusSurvivor(7,3));
 
 //        https://www.codewars.com/kata/536a155256eb459b8700077e/train/java
-        System.out.println(TheClockwiseSpiral.createSpiral(3));
+        //System.out.println(TheClockwiseSpiral.createSpiral(3));
+
+//        https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/train/java
+//        System.out.println(CodeWarsMath.nearestSq(111));
+
+//        https://www.codewars.com/kata/5a34b80155519e1a00000009/train/java
+//        System.out.println(ZywOo.multipleOfIndex(new int[]{-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68}));
+
+//        https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce/train/java
+//        System.out.println(Kata.multiTable(5));
+
+//        https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java
+        int[][] array = new int[][]{{}};
+        System.out.println(Arrays.toString(Snail.snail(array)));
+
+
+
 
     }
 }
