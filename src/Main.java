@@ -85,12 +85,15 @@ public class Main {
 //        System.out.println(Kata.multiTable(5));
 
 //        https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java
-        int[][] array = new int[][]{{}};
-        System.out.println(Arrays.toString(Snail.snail(array)));
 
-
-
-
+//        https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/java
+        int[][] result = Spiralizor.spiralize(8);
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[i].length; j++) {
+                System.out.print(result[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
 
