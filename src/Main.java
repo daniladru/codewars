@@ -87,13 +87,24 @@ public class Main {
 //        https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java
 
 //        https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/java
-        int[][] result = Spiralizor.spiralize(8);
-        for (int i = 0; i < result.length; i++) {
-            for (int j = 0; j < result[i].length; j++) {
-                System.out.print(result[i][j]);
-            }
-            System.out.println();
-        }
+//        int[][] result = Spiralizor.spiralize(8);
+//        for (int i = 0; i < result.length; i++) {
+//            for (int j = 0; j < result[i].length; j++) {
+//                System.out.print(result[i][j]);
+//            }
+//            System.out.println();
+//        }
+
+//        https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/java
+//        ArrayList<int[]> list = new ArrayList<int[]>();
+//        list.add(new int[] {10,0});
+//        list.add(new int[] {3,5});
+//        list.add(new int[] {2,5});
+//        System.out.println(Metro.countPassengers(list));
+
+//        System.out.println(Arge.nbYear(1000, 2.0, 50, 1214));
+
+        System.out.println(BitCounting.countBits(1234));
 
 
     }
