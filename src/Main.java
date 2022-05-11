@@ -101,10 +101,10 @@ public class Main {
 //        list.add(new int[] {3,5});
 //        list.add(new int[] {2,5});
 //        System.out.println(Metro.countPassengers(list));
-
 //        System.out.println(Arge.nbYear(1000, 2.0, 50, 1214));
+//        System.out.println(BitCounting.countBits(1234));
 
-        System.out.println(BitCounting.countBits(1234));
+        System.out.println(Kata.longToIP(2154959208L));
 
 
     }
