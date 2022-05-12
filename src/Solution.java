@@ -17,7 +17,7 @@ public class Solution {
     }
 
     public static String getMiddle(String word) {
-        String result = "";
+        String result;
         if (word.length() % 2 == 0) {
             result = word.substring((word.length() / 2) - 1, (word.length() / 2) + 1);
         } else {
@@ -27,7 +27,7 @@ public class Solution {
     }
 
     public static List<Object> filterList(final List<Object> list) {
-        List result = new ArrayList();
+        List<Object> result = new ArrayList();
         for (int i = 0; i < list.size(); i++) {
 
             if (list.get(i) instanceof Integer) {
@@ -65,7 +65,7 @@ public class Solution {
     }
 
     public static int fourSeven(int n) {
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>() {{
+        HashMap<Integer, Integer> map = new HashMap<>() {{
             put(4, 7);
             put(7, 4);
         }};
@@ -117,7 +117,9 @@ public class Solution {
             }
         }
 
-        if (count!=0) {result = false;}
+        if (count != 0) {
+            result = false;
+        }
         return result;
     }
 
@@ -143,4 +145,25 @@ public class Solution {
 //
 //        return result;
 //    }
+
+    static String toCamelCase(String s) {
+        StringBuilder stringBuilder = new StringBuilder();
+        boolean newWord = false;
+        for (char ch : s.toCharArray()
+        ) {
+            if (!Character.isAlphabetic(ch)) {
+                newWord = true;
+                continue;
+            }
+            if (newWord) {
+                stringBuilder.append(Character.toUpperCase(ch));
+                newWord = false;
+            } else {
+                stringBuilder.append(ch);
+            }
+        }
+
+        return stringBuilder.toString();
+    }
+
 }

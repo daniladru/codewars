@@ -104,8 +104,16 @@ public class Main {
 //        System.out.println(Arge.nbYear(1000, 2.0, 50, 1214));
 //        System.out.println(BitCounting.countBits(1234));
 
-        System.out.println(Kata.longToIP(2154959208L));
+//        System.out.println(Kata.longToIP(2154959208L));
 
+//        https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/java
+//        System.out.println(CountingDuplicates.duplicateCount("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"));
+
+//        https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/java
+//        System.out.println(Persist.persistence(25));
+
+//        https://www.codewars.com/kata/517abf86da9663f1d2000003/train/java
+        System.out.println(Solution.toCamelCase("the-stealth-warrior"));
 
     }
 }
